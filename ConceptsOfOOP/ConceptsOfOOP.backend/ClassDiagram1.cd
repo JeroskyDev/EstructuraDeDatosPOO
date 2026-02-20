@@ -24,7 +24,7 @@
         <Point X="2.188" Y="7" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
-        <Position X="-0.721" Y="0.902" />
+        <Position X="-0.753" Y="0.818" />
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
@@ -37,10 +37,24 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="ConceptsOfOPP.Backend.SalaryEmployee">
-    <Position X="4.25" Y="2.75" Width="1.5" />
+    <Position X="4.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACAAACAAAAAAAAAEAAAAAAAAAAAAAAAIAAAAAAQAAAA=</HashCode>
       <FileName>SalaryEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConceptsOfOPP.Backend.HourlyEmployee">
+    <Position X="5" Y="6" Width="3" />
+    <InheritanceLine Type="ConceptsOfOPP.Backend.Employee" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="2.5" Y="4.625" />
+        <Point X="6.5" Y="4.625" />
+        <Point X="6.5" Y="6" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AIAABAAAAAAAAAAEAAgAAAAAAABEAAAIAAAAAAAAAAE=</HashCode>
+      <FileName>HourlyEmployee.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
