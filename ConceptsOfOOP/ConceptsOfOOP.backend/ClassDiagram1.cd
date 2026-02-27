@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="ConceptsOfOPP.Backend.Date">
-    <Position X="11" Y="6.75" Width="3" />
+    <Position X="11" Y="7.75" Width="3" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAJAAAAAAEAAEAAAMAAAAAAACEMAAAAAAAAAA=</HashCode>
       <FileName>Date.cs</FileName>
@@ -12,7 +12,7 @@
     <AssociationLine Name="BornDate" Type="ConceptsOfOPP.Backend.Date" FixedToPoint="true">
       <Path>
         <Point X="11.625" Y="4.017" />
-        <Point X="11.625" Y="6.75" />
+        <Point X="11.625" Y="7.75" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
         <Position X="0.06" Y="1.048" />
@@ -21,7 +21,7 @@
     <AssociationLine Name="HireDay" Type="ConceptsOfOPP.Backend.Date" ManuallyRouted="true" FixedToPoint="true">
       <Path>
         <Point X="12.406" Y="4.017" />
-        <Point X="12.438" Y="6.75" />
+        <Point X="12.438" Y="7.75" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
         <Position X="-0.753" Y="0.818" />
@@ -35,23 +35,24 @@
       <Property Name="BornDate" />
       <Property Name="HireDay" />
     </ShowAsAssociation>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="ConceptsOfOPP.Backend.SalaryEmployee">
-    <Position X="16.75" Y="0.75" Width="1.5" />
+    <Position X="14.75" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACAAACAAAAAAAAAEAAAAAAAAAAAAAAAIAAAAAAQAAAA=</HashCode>
       <FileName>SalaryEmployee.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ConceptsOfOPP.Backend.HourlyEmployee">
-    <Position X="17.75" Y="6.75" Width="3" />
+    <Position X="15" Y="6.25" Width="3" />
     <InheritanceLine Type="ConceptsOfOPP.Backend.Employee" ManuallyRouted="true" FixedFromPoint="true">
       <Path>
         <Point X="12.75" Y="3.125" />
-        <Point X="13.125" Y="3.125" />
-        <Point X="13.125" Y="6.375" />
-        <Point X="19.25" Y="6.375" />
-        <Point X="19.25" Y="6.75" />
+        <Point X="13.781" Y="3.125" />
+        <Point X="13.781" Y="5.531" />
+        <Point X="16.5" Y="5.531" />
+        <Point X="16.5" Y="6.25" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
@@ -60,18 +61,36 @@
     </TypeIdentifier>
   </Class>
   <Class Name="ConceptsOfOPP.Backend.CommissionEmployee">
-    <Position X="6.25" Y="1.5" Width="1.5" />
+    <Position X="8.5" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAoAAAAAAAAAEAAEAAAABAAAAAAAAAAIAAgAAAAAAAA=</HashCode>
       <FileName>CommissionEmployee.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ConceptsOfOPP.Backend.BaseCommisionEmployee">
-    <Position X="6.25" Y="7.25" Width="1.5" />
+    <Position X="8.5" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACAAACAAAAAAAAAEAAAAAAAAAAAAAAAIAAAAAAQAAAA=</HashCode>
       <FileName>BaseCommisionEmployee.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="ConceptsOfOPP.Backend.Invoice">
+    <Position X="19.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABACAAAAAAAgAAAFAAAAAAAAAAAAAAAJAAIggAAAgAA=</HashCode>
+      <FileName>Invoice.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Date" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="ConceptsOfOPP.Backend.IPay">
+    <Position X="18" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>IPay.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

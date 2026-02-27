@@ -20,34 +20,40 @@ catch (Exception ex)
 
 try
 {
-    var employees = new List<Employee>();
-    decimal payroll = 0;
+    var expenses = new List<IPay>();
+    decimal total = 0;
     var employee1 = new SalaryEmployee(1010, "Maria", "Perez", true, new Date(1990, 5, 15), new Date(2020, 1, 1), 2500000);
-    employees.Add(employee1);
+    expenses.Add(employee1);
     var employee2 = new SalaryEmployee(2020, "Joaquin", "Gonzalez", true, new Date(1970, 4, 12), new Date(2015, 11, 16), 10395876);
-    employees.Add(employee2);
+    expenses.Add(employee2);
     var employee3 = new HourlyEmployee(3030, "Ána", "Lopez", true, new Date(1995, 8, 20), new Date(2022, 6, 1), 18000, 95);
-    employees.Add(employee3);
+    expenses.Add(employee3);
     var employee4 = new HourlyEmployee(4040, "Kevin", "Rúa", true, new Date(1998, 5, 25), new Date(2021, 6, 1), 10000, 112);
-    employees.Add(employee4);
+    expenses.Add(employee4);
     var employee5 = new CommissionEmployee(5050, "Sofia", "Gómez", true, new Date(1992, 12, 19), new Date(2018, 3, 15), 0.03f, 600000000);
-    employees.Add(employee5);
+    expenses.Add(employee5);
     var employee6 = new CommissionEmployee(6060, "Diego", "Martinez", true, new Date(1985, 12, 19), new Date(2010, 3, 15), 0.03f, 120000000);
-    employees.Add(employee6);
+    expenses.Add(employee6);
     var employee7 = new BaseCommisionEmployee(7070, "Laura", "Garcia", true, new Date(1993, 11, 25), new Date(2019, 5, 20), 0.015f, 250000000, 550000);
-    employees.Add(employee7);
+    expenses.Add(employee7);
     var employee8 = new BaseCommisionEmployee(8080, "Carlos", "Rodriguez", true, new Date(1988, 4, 10), new Date(2026, 2, 10), 0.015f, 0, 550000);
-    employees.Add(employee8);
+    expenses.Add(employee8);
 
+    var invoice1 = new Invoice(9090, "iPhone 14 Pro Max", new Date(2024, 6, 1), 2, 8000000);
+    expenses.Add(invoice1);
+    var invoice2 = new Invoice(10010, "Samsung Galaxy S24 Ultra", new Date(2024, 6, 1), 3, 7000000);
+    expenses.Add(invoice2);
+    var invoice3 = new Invoice(10020, "UTP Level 6", new Date(2024, 6, 1), 100.45f, 6450);
+    expenses.Add(invoice3);
 
-    foreach (var employee in employees)
+    foreach (var expense in expenses)
     {
         Console.WriteLine(new string('-', 47));
-        Console.WriteLine(employee);
-        payroll += employee.GetValueToPay();
+        Console.WriteLine(expense);
+        total += expense.GetValueToPay();
     }
     Console.WriteLine(new string('=', 47));
-    Console.WriteLine($"Payroll: {payroll,20:C2}");
+    Console.WriteLine($"Payroll: {total,20:C2}");
 } 
 catch (Exception ex)
 {

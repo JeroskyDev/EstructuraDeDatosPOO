@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ConceptsOfOPP.Backend;
 
-public abstract class Employee
+public abstract class Employee : IPay
 {
     //constructors
     protected Employee(int id, string firstName, string lastName, bool isActive, Date bornDate, Date hireDay)
@@ -36,5 +36,5 @@ public abstract class Employee
             $"Value to pay: {GetValueToPay(),20:C2}";
     }
 
-    public abstract decimal GetValueToPay(); //abstract method (can have polimorfism
+    public abstract decimal GetValueToPay(); //abstract method (can have polimorfism)
 }
